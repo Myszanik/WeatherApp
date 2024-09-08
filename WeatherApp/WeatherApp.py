@@ -5,6 +5,8 @@ import requests
 from datetime import datetime, timedelta
 from PIL import Image, ImageTk
 from io import BytesIO
+from dotenv import load_dotenv
+import os
 class WeatherApp:
     def __init__(self, master):
         self.master = master
@@ -16,6 +18,8 @@ class WeatherApp:
 
         # Store the city name
         self.city_name = ""
+
+        load_dotenv()
 
         # Create frames
         self.main_frame = tk.Frame(master, bg='green')
@@ -207,7 +211,7 @@ class WeatherApp:
     # Fetching hourly data method
     def fetch_3hourly_data(self, date):
         city = self.city_name
-        api_key = 'REMOVED_KEY'
+        api_key = os.getenv("api_key")
         url = f'http://api.openweathermap.org/data/2.5/forecast?q={city}&appid={api_key}&units=metric'
 
         try:
@@ -273,7 +277,7 @@ class WeatherApp:
 
     def fetch_weather_data(self):
         city = self.entry.get()
-        api_key = 'REMOVED_KEY'
+        api_key = os.getenv("api_key")
         url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric'
 
         try:
@@ -340,7 +344,7 @@ class WeatherApp:
 
     def fetch_5day_forecast(self):
         city = self.entry.get()
-        api_key = 'REMOVED_KEY'
+        api_key = os.getenv("api_key")
         url = f'http://api.openweathermap.org/data/2.5/forecast?q={city}&appid={api_key}&units=metric'
 
         try:
