@@ -41,8 +41,7 @@ Python packages (installed via `requirements.txt`):
 - `requests`
 - `python-dotenv`
 - `Pillow`
-- `geopy`
-- `geocoder`
+Open .env.example
 
 ## Setup
 
@@ -61,12 +60,12 @@ Python packages (installed via `requirements.txt`):
    pip install -r requirements.txt
 5. **Add your OpenWeather API key**:
    ```bash
-   .env
+   .env (Create a file)
    api_key=YOUR_OPENWEATHER_API_KEY
 6. **Run the Application**:
    ```bash
-   python WeatherApp.py
-
+   Windows - python WeatherApp.py
+   Mac/Linux - python3 WeatherApp.py
 
 ## Notes
 

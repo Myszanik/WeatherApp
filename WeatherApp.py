@@ -1,6 +1,4 @@
 import tkinter as tk
-from geopy.geocoders import Nominatim
-import geocoder
 import requests
 from datetime import datetime, timedelta
 from PIL import Image, ImageTk
@@ -434,5 +432,5 @@ class WeatherApp:
         self.previous_day_error_message.config(text='')
 
 root = tk.Tk()
-ToDoApp = WeatherApp(root)
+app = WeatherApp(root)
 root.mainloop()
