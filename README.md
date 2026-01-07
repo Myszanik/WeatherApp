@@ -47,25 +47,25 @@ Python packages (installed via `requirements.txt`):
 ## Setup
 
 1. **Clone the repository**
-```bash
-git clone https://github.com/Myszanik/WeatherApp.git
+   ```bash
+   git clone https://github.com/Myszanik/WeatherApp.git
 2. **Navigate to the Project Directory**:
-```bash
-cd WeatherApp
+   ```bash
+   cd WeatherApp
 3. **Create a virtual environment (recommended)**:
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
+   ```bash
+   python3 -m venv .venv
+   source .venv/bin/activate
 4. **Install Dependencies**:
-```bash
-pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
 5. **Add your OpenWeather API key**:
-```bash
-.env
-api_key=YOUR_OPENWEATHER_API_KEY
+   ```bash
+   .env
+   api_key=YOUR_OPENWEATHER_API_KEY
 6. **Run the Application**:
-```bash
-python WeatherApp.py
+   ```bash
+   python WeatherApp.py
 
 
 ## Notes
