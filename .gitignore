@@ -1,10 +1,18 @@
+# macOS
 .DS_Store
+
+# Python
 __pycache__/
 *.pyc
 
+# Env files, secrets
 .env
-.idea/
-.vscode/
 
+# Virtualenv
 venv/
 .venv/
+
+# IDEs
+.idea/
+.vscode/
+*.iml
