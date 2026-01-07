@@ -7,6 +7,7 @@ from PIL import Image, ImageTk
 from io import BytesIO
 from dotenv import load_dotenv
 import os
+load_dotenv()
 class WeatherApp:
     def __init__(self, master):
         self.master = master
@@ -18,8 +19,6 @@ class WeatherApp:
 
         # Store the city name
         self.city_name = ""
-
-        load_dotenv()
 
         # Create frames
         self.main_frame = tk.Frame(master, bg='green')
