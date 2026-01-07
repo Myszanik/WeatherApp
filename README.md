@@ -84,7 +84,7 @@ python WeatherApp.py
 ## Status
 
 This project is for learning and practice. Improvements and clean-ups are welcome.
-::contentReference[oaicite:0]{index=0}
+
 
 
 
