@@ -61,7 +61,7 @@ Open .env.example
    ```bash
    python -m pip install -r requirements.txt
 5. **Add your OpenWeather API key**:  
-	Create a file named `.env` in the project folder (same level as `WeatherApp.py`)
+	- Create a file named `.env` in the project folder (same level as `WeatherApp.py`)
    ```bash
    api_key=YOUR_OPENWEATHER_API_KEY
 6. **Run the Application**:
