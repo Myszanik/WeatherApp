@@ -53,19 +53,19 @@ Open .env.example
    cd WeatherApp
 3. **Create a virtual environment (recommended)**:
    ```bash
-   python3 -m venv .venv
-   source .venv/bin/activate
+   python -m venv .venv
+   ```bash
+   .venv\Scripts\activate
 4. **Install Dependencies**:
    ```bash
-   pip install -r requirements.txt
+   python -m pip install -r requirements.txt
 5. **Add your OpenWeather API key**:
+   Create a file named `.env` in the project folder (same level as `WeatherApp.py`)
    ```bash
-   .env (Create a file)
    api_key=YOUR_OPENWEATHER_API_KEY
 6. **Run the Application**:
    ```bash
-   Windows - python WeatherApp.py
-   Mac/Linux - python3 WeatherApp.py
+   python WeatherApp.py
 
 ## Notes
 
