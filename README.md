@@ -72,6 +72,14 @@ Python packages (installed via `requirements.txt`):
 - The `.env` file is intentionally not included in the repository, each user must create their own to run the app.
 - If you make the repo public, your API key stays safe as long as `.env` is not committed.
 
+## Screenshots
+
+### Main screen (current weather + 5-day forecast)
+![Main screen](screenshots/main.png)
+
+### 3-hour forecast view (selected day)
+![3-hour forecast](screenshots/hourly.png)
+
 ## Acknowledgements
 
 - `tkinter`, for the GUI
