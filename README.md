@@ -42,29 +42,29 @@ Python packages (installed via `requirements.txt`):
 - `python-dotenv`
 - `Pillow`
 
-## Setup
+## Setup (Windows, PowerShell)
 
 1. **Clone the repository**
-   ```bash
+   ```powershell
    git clone https://github.com/Myszanik/WeatherApp.git
 2. **Navigate to the Project Directory**:
-   ```bash
+   ```powershell
    cd WeatherApp
 3. **Create a virtual environment (recommended)**:
-   ```bash
+   ```powershell
    python -m venv .venv
    ```
-   ```bash
-   .venv\Scripts\activate
+   ```powershell
+   .\.venv\Scripts\Activate.ps1
 4. **Install Dependencies**:
-   ```bash
+   ```powershell
    python -m pip install -r requirements.txt
 5. **Add your OpenWeather API key**:  
 	- Create a file named `.env` in the same folder as `WeatherApp.py`, then put this line inside it
-   ```bash
+   ```powershell
    api_key=YOUR_OPENWEATHER_API_KEY
 6. **Run the Application**:
-   ```bash
+   ```powershell
    python WeatherApp.py
 
 ## Notes
